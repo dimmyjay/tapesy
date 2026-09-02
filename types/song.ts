@@ -11,12 +11,13 @@ export interface Song {
   audioUrl: string;
   imageUrl: string;
   lyrics?: string; // Fallback plain text
-  syncedLyrics?: SyncedLyric[]; // NEW: Time-synced lyrics
+  syncedLyrics?: SyncedLyric[]; // Time-synced lyrics
   testimony?: string;
   chords?: string;
   season?: string;
   verified?: boolean;
   tipLink?: string;
+  uploadedBy?: string; // ✅ NEW: User ID of the uploader (fixes the build error)
   duration?: number;
   createdAt: number;
 }
